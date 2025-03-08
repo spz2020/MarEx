@@ -19,7 +19,7 @@ jobs:
     - name: Install dotnet-packaging
       run: dotnet tool install --global dotnet-zip
     - name: Restore dependencies
-      run: cd MarEx && dotnet restore MarEx .csproj
+      run: cd MarEx && dotnet restore MarEx.csproj
     - name: Build
       run: cd MarEx && dotnet build MarEx.csproj --no-restore
     - name: packages
